@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">登陆注册</string>
+    <string name="btu_login">登录</string>
+    <string name="btu_register">注册</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+</resources>

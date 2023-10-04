@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D5E9F3"
+    tools:context=".ChatActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#73C6EC">
+
+        <TextView
+            android:id="@+id/chat_object_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:gravity="center"
+            android:text="Hello World!"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1">-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/chat_ll"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:gravity="center|bottom">
+        <EditText
+            android:id="@+id/chat_send_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:minWidth="280dp"
+            android:hint="输入信息"></EditText>
+        <Button
+            android:id="@+id/chat_send_bu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            ></Button>
+
+    </LinearLayout>
+</LinearLayout>
